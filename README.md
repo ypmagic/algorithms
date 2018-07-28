@@ -6,3 +6,4 @@
 
 ## july 28, 2018
 * finished linkedlist
+* implemented stack and queue
