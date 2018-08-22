@@ -19,6 +19,14 @@ class UnorderedLinkedList:
     def __init__ (self):
         self.head = None
 
+    def __str__ (self):
+        curr = self.head
+        str = "[" + self.head.getData()
+        while curr.getNext() != None:
+            str = str + ", " + curr.getData()
+        str = str + curr.getData() + "]"
+        return str
+
     def isEmpty (self):
         return self.head == None
 
@@ -103,4 +111,3 @@ class UnorderedLinkedList:
             temp = Node(item)
             prev.setNExt(temp)
             temp.setNext(curr)
-    
